@@ -99,10 +99,12 @@ while running == True:
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     mouse_pos = pygame.mouse.get_pos()
                     if event.button == 1:
+                            
                             if inventory_trees > 0:
-                                if not any(tree.hitbox.collidepoint(mouse_pos) for tree in trees):
-                                    trees.append(Tree.Tree(mouse_pos[0], mouse_pos[1], growth_images))
-                                    inventory_trees = inventory_trees - 1
+                                if cross_button.rect.collidepoint(event.pos) == False:
+                                    if not any(tree.hitbox.collidepoint(mouse_pos) for tree in trees):
+                                        trees.append(Tree.Tree(mouse_pos[0], mouse_pos[1], growth_images))
+                                        inventory_trees = inventory_trees - 1
                             
                     elif event.button == 3: 
                         for tree in trees:
