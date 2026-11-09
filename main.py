@@ -182,7 +182,9 @@ while running == True:
         screen.blit(oxygen_images[bar_index], (955, 150))
         inventory_text = font.render(f"Trees: {inventory_trees}", True, (0, 0, 0))
         screen.blit(inventory_text, (20, 60))
-        oxygen_level_text = font.render(f"Oxygen level:{(oxygen_level*100)}", True, (0,0,0))
+        oxygen_level_rounded = round(oxygen_level, 2)
+        oxygen_level_text = font.render(f"Oxygen level: {oxygen_level_rounded*100}%", True, (0,0,0))
+        screen.blit (oxygen_level_text, (20, 120))
 
         milestone = int(oxygen_level * 100) // 5
 

@@ -40,4 +40,3 @@ return age_factor * self.genetics * (self.scale**2) // show dexter exponential
 if (oxygen_level * 10) % 5 == 0:
 inventory trees = inventory trees +1
 NEED COOLDOWN OR ALL THE TREES AHHHHHH
-
