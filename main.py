@@ -21,23 +21,23 @@ last_milestone = int(oxygen_level * 100) // 5
 
 mouse_pos = pygame.mouse.get_pos()
 
-bg_image = pygame.image.load("sop.png").convert_alpha()
-play_button = pygame.image.load("play_button.png").convert_alpha()
-play_button_light = pygame.image.load("play_button_light.png").convert_alpha()
-loading_screen = pygame.image.load("loading.png").convert_alpha()
-loading_screen_2 = pygame.image.load("loading2.png").convert_alpha()
-loading_screen_3 = pygame.image.load("loading3.png").convert_alpha()
-image = pygame.image.load("image.jpg").convert_alpha()
-planet_bg_image = pygame.image.load("planet_bg.png").convert_alpha()
-desert = pygame.image.load("desert icon.png").convert_alpha()
-forest = pygame.image.load("forest icon.png").convert_alpha()
-river = pygame.image.load("river icon.png").convert_alpha()
-cross = pygame.image.load("cross.png").convert_alpha()
-hb_false = pygame.image.load("hitbox false.png").convert_alpha()
-hb_true = pygame.image.load("hitbox true.png").convert_alpha()
-bg_grassy = pygame.image.load("grassy.png").convert_alpha()
+bg_image = pygame.image.load("Images/sop.png").convert_alpha()
+play_button = pygame.image.load("Images/play_button.png").convert_alpha()
+play_button_light = pygame.image.load("Images/play_button_light.png").convert_alpha()
+loading_screen = pygame.image.load("Images/loading.png").convert_alpha()
+loading_screen_2 = pygame.image.load("Images/loading2.png").convert_alpha()
+loading_screen_3 = pygame.image.load("Images/loading3.png").convert_alpha()
+image = pygame.image.load("Images/image.jpg").convert_alpha()
+planet_bg_image = pygame.image.load("Images/planet_bg.png").convert_alpha()
+desert = pygame.image.load("Images/desert icon.png").convert_alpha()
+forest = pygame.image.load("Images/forest icon.png").convert_alpha()
+river = pygame.image.load("Images/river icon.png").convert_alpha()
+cross = pygame.image.load("Images/cross.png").convert_alpha()
+hb_false = pygame.image.load("Images/hitbox false.png").convert_alpha()
+hb_true = pygame.image.load("Images/hitbox true.png").convert_alpha()
+bg_grassy = pygame.image.load("Images/grassy.png").convert_alpha()
 oxygen_images = [
-    pygame.image.load(f"oxygen{x}.png").convert_alpha()
+    pygame.image.load(f"Images/oxygen{x}.png").convert_alpha()
     for x in range(5, 101, 5)
 ]
 ## ngl that felt cool cause i cba to write allat
@@ -46,9 +46,9 @@ hb_showing = hb_false
 
 
 growth_images = [
-    pygame.image.load("tree1.png").convert_alpha(),
-    pygame.image.load("tree2.png").convert_alpha(),
-    pygame.image.load("tree3.png").convert_alpha()
+    pygame.image.load("Images/tree1.png").convert_alpha(),
+    pygame.image.load("Images/tree2.png").convert_alpha(),
+    pygame.image.load("Images/tree3.png").convert_alpha()
 ]
 
 trees = []
